@@ -1,0 +1,361 @@
+{\rtf1\ansi\ansicpg65001\deff0
+{\fonttbl{\f0 Malgun Gothic;}{\f1 Arial;}}
+\viewkind4\uc1\f0\fs21
+\pard\qc\b\fs36 지방정부 빗물배수펌프 설치의 장기 축적과 단기 결정\b0\fs21\par
+\pard\qc\b 전국 시군구 패널 및 공간계량 분석\b0\par
+\pard\qc 최원우\par
+\pard\sa180\par
+\pard\b 국문초록\b0\par
+\pard\qj 본 연구는 지방정부의 빗물배수펌프 설치가 과거 정책경험, 재난피해 경험, 정치·재정적 여건 및 인접 지방정부의 정책 선택과 어떠한 관련성을 갖는지 분석한다. 2004년부터 2023년까지 전국 229개 시군구 패널자료와 2024년 시군구 공간경계를 결합하였다. 구조적으로는 229개 지방정부와 20개 연도로 구성된 균형패널이지만, 주요 분석변수가 전 기간 결측인 24개 지방정부를 제외한 실질 분석표본은 205개 지방정부이다. 장기간 누적된 인프라 분포에는 전역·국지 Moran’s I와 공간회귀모형을 적용하고, 당해연도 신규 설치에는 지방정부 및 연도 고정효과를 포함한 패널 포아송 모형을 적용하였다.\par
+\pard\qj 분석 결과, 2023년 Queen 기준 누적설치수로그의 Moran’s I는 0.060(p=0.115)으로 유의하지 않았다. 공간시차·공간오차·공간더빈모형의 공간계수도 모두 비유의하였다. 국지적으로 여수시·고흥군·진주시·산청군이 고-고 군집으로 분류되었으나 이를 전국적 공간확산의 증거로 일반화하기 어렵다. 패널 포아송 분석에서도 재난경험, 피해규모, 인접 지방정부의 누적 설치수준은 당해연도 신규 설치를 일관되게 설명하지 못하였다. 원자료의 동형적압력 변수는 당해연도 종속변수로부터 계산된 값으로 확인되어 제도적 동형화 효과로 해석할 수 없었다. 동형적압력을 제외한 대안모형에서는 전년도 누적설치수로그가 음(-)의 관계를 보여 인프라 포화 또는 대체 가능성을 시사했으나 모형 의존성이 커 인과효과로 단정하기 어렵다.\par
+\pard\b 주제어:\b0 빗물배수펌프, 지방정부, 재난관리, 공간자기상관, 정책확산, 패널 포아송\par
+
+\pard\sb240\sa120\b\fs28 Ⅰ. 서론\b0\fs21\par
+\pard\qj 기후변화에 따른 집중호우와 극한호우의 증가는 도시침수 위험과 지방정부의 재난대응 부담을 확대하고 있다. 빗물배수펌프는 단시간에 유입된 우수를 강제 배제하는 대표적인 구조적 대응시설이며, 설치 여부와 설치 규모는 지방정부의 예방역량을 구성하는 중요한 정책산출이다.\par
+\pard\qj 2023년 전체 운영현황에서는 전국 157개 기초지방정부가 총 951개의 빗물배수펌프를 보유한 것으로 조사되었다. 다만 본 연구의 누적설치수는 2004년 이후 신규 설치 수의 합계로서 2004년 이전 시설까지 포함한 전체 운영 대수와 구분된다. 분석기간 중 신규 설치는 총 546개이며, 실질 분석대상 205개 지방정부 가운데 132개가 한 번 이상 신규 설치를 하였다.\par
+\pard\qj 본 연구는 빗물배수펌프 설치를 단순한 공간확산으로 전제하지 않고 공간확산의 존재 여부를 경험적으로 검증한다. 또한 장기적으로 축적된 누적 설치수준과 단년도 신규 설치 결정을 분리해 분석한다.\par
+
+\pard\sb240\sa120\b\fs28 Ⅱ. 이론적 논의\b0\fs21\par
+\pard\b 1. 정책경험과 포화효과\b0\par
+\pard\qj 과거 설치경험은 사업 검토, 예산편성, 설계, 공사 및 유지관리 절차를 축적하여 추가 설치의 행정비용을 낮출 수 있다. 반면 주요 취약지역에 시설이 이미 설치된 경우 추가 수요가 감소하거나 하수관로·저류시설·하천정비 등 다른 수단으로 투자가 이동할 수 있다.\par
+\pard\b 2. 재난경험과 정책학습\b0\par
+\pard\qj 재난은 정책문제를 가시화하는 초점사건으로 기능할 수 있지만, 피해가 곧바로 예방시설 설치로 이어지는 것은 아니다. 예산반영, 타당성 검토, 설계와 공사에 시간이 필요하기 때문에 본 연구는 당해연도 피해보다 전년도 피해경험, 최근 3년 피해횟수, 전년도 피해규모를 중심으로 분석하였다.\par
+\pard\b 3. 공간적 상호작용\b0\par
+\pard\qj 인접 지방정부의 설치는 정책정보와 비교기준을 제공할 수 있다. 그러나 공간적 유사성은 정책 모방이 아니라 유사한 지형·수문환경의 결과일 수 있다. 이에 따라 종속변수의 공간군집, 일반회귀 잔차의 공간자기상관, 공간시차계수와 공간오차계수를 함께 검토하였다.\par
+
+\pard\sb240\sa120\b\fs28 Ⅲ. 연구설계\b0\fs21\par
+\pard\b 표 1. 자료 결합 및 기본 점검 결과\b0\par
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl\b 항목\cell 결과\b0\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 엑셀 시트\cell Sheet2\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 엑셀 행×열\cell 4,580×21\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 공간객체 수\cell 229\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 좌표계\cell EPSG:5186\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 코드 결합 성공\cell 229개(100%)\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 중복 코드-연도\cell 0건\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 유효하지 않은 도형\cell 0개\cell\row
+\trowd\trgaph80\trleft0\cellx3600\cellx9000
+\intbl 최종 분석기간\cell 2004~2023년\cell\row
+\pard\sa160\par
+\pard\b 표 2. 분석별 유효 표본\b0\par
+\trowd\trgaph60\trleft0\cellx2200\cellx3600\cellx5000\cellx6500\cellx9000
+\intbl\b 표본\cell 관측치 수\cell 지자체 수\cell 기간\cell 비고\b0\cell\row
+\trowd\trgaph60\trleft0\cellx2200\cellx3600\cellx5000\cellx6500\cellx9000
+\intbl 구조적 패널\cell 4,580\cell 229\cell 2004~2023\cell 균형패널\cell\row
+\trowd\trgaph60\trleft0\cellx2200\cellx3600\cellx5000\cellx6500\cellx9000
+\intbl 설치변수 유효 표본\cell 4,100\cell 205\cell 2004~2023\cell 24개 지자체 전 기간 결측\cell\row
+\trowd\trgaph60\trleft0\cellx2200\cellx3600\cellx5000\cellx6500\cellx9000
+\intbl 패널 완전사례\cell 3,434\cell 202\cell 2007~2023\cell 시차·3년 합계 필요\cell\row
+\trowd\trgaph60\trleft0\cellx2200\cellx3600\cellx5000\cellx6500\cellx9000
+\intbl 포아송 FE 추정\cell 1,989\cell -\cell 2007~2023\cell 분리 관측치 제거 후\cell\row
+\trowd\trgaph60\trleft0\cellx2200\cellx3600\cellx5000\cellx6500\cellx9000
+\intbl 2023년 횡단면\cell 205\cell 205\cell 2023\cell 누적·시차 변수 사용\cell\row
+\pard\sa160\par
+\pard\b 표 3. 주요 변수 정의\b0\par
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl\b 구분\cell 변수명\cell 측정\b0\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 종속변수\cell 당해연도설치수\cell 해당 연도 신규 설치 개수\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 종속변수\cell 누적설치수\cell 2004년부터 해당 연도까지 신규 설치 수의 합\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 종속변수\cell 누적설치수로그\cell ln(누적설치수+1)\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 정책경험\cell 전년도누적설치수로그\cell ln(전년도까지 누적설치수+1)\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 재난경험\cell 전년도우심피해경험\cell 우심피해경험의 1년 시차값\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 재난경험\cell 최근3년우심피해횟수\cell t-1~t-3년 우심피해 횟수 합\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 피해규모\cell 전년도피해규모로그\cell ln(전년도 피해규모+1)\cell\row
+\trowd\trgaph60\trleft0\cellx1800\cellx4300\cellx9000
+\intbl 공간요인\cell 전년도인접지역누적설치수\cell 인접 지방정부 전년도 누적설치수 평균\cell\row
+\pard\sa160\par
+
+\pard\sb240\sa120\b\fs28 Ⅳ. 분석결과\b0\fs21\par
+\pard\b 표 4. 주요 변수 기초통계\b0\par
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl\b 변수명\cell N\cell 평균\cell 표준편차\cell 최소\cell 중앙값\cell 최대\cell 0 비율\cell 결측률\b0\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 당해연도설치수\cell 4,100\cell 0.133\cell 0.490\cell 0\cell 0\cell 7\cell 0.905\cell 0.105\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 누적설치수\cell 4,100\cell 1.401\cell 2.567\cell 0\cell 0\cell 19\cell 0.557\cell 0.105\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 전년도누적설치수\cell 4,100\cell 1.268\cell 2.438\cell 0\cell 0\cell 19\cell 0.589\cell 0.105\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 최근3년설치수\cell 4,100\cell 0.384\cell 0.956\cell 0\cell 0\cell 11\cell 0.779\cell 0.105\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 우심피해경험\cell 3,895\cell 0.203\cell 0.746\cell 0\cell 0\cell 30\cell 0.843\cell 0.150\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 전년도피해규모로그\cell 3,895\cell 2.513\cell 5.829\cell 0\cell 0\cell 20.273\cell 0.843\cell 0.150\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 하천면적로그\cell 4,100\cell 15.263\cell 2.265\cell 0\cell 16.051\cell 17.917\cell 0.005\cell 0.105\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 인구수로그\cell 4,100\cell 11.831\cell 1.025\cell 9.090\cell 11.847\cell 13.903\cell 0\cell 0.105\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 세출예산로그\cell 4,100\cell 19.679\cell 0.650\cell 17.563\cell 19.646\cell 21.899\cell 0\cell 0.105\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2700\cellx3600\cellx4600\cellx5500\cellx6400\cellx7300\cellx8200\cellx9000
+\intbl 재정자립도\cell 4,100\cell 26.558\cell 14.871\cell 6.4\cell 22.4\cell 92.7\cell 0\cell 0.105\cell\row
+\pard\sa160\par
+\pard\b 표 5. 연도별 신규 및 누적 설치 수\b0\par
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl\b 연도\cell 신규\cell 누적\cell 연도\cell 신규\cell 누적\b0\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2004\cell 34\cell 34\cell 2014\cell 38\cell 310\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2005\cell 22\cell 56\cell 2015\cell 22\cell 332\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2006\cell 18\cell 74\cell 2016\cell 35\cell 367\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2007\cell 31\cell 105\cell 2017\cell 23\cell 390\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2008\cell 16\cell 121\cell 2018\cell 37\cell 427\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2009\cell 21\cell 142\cell 2019\cell 28\cell 455\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2010\cell 29\cell 171\cell 2020\cell 24\cell 479\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2011\cell 23\cell 194\cell 2021\cell 24\cell 503\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2012\cell 46\cell 240\cell 2022\cell 23\cell 526\cell\row
+\trowd\trgaph50\trleft0\cellx1500\cellx3000\cellx4500\cellx6000\cellx7500\cellx9000
+\intbl 2013\cell 32\cell 272\cell 2023\cell 20\cell 546\cell\row
+\pard\sa160\par
+\pard\b 표 6. 분산팽창계수\b0\par
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl\b 변수명\cell VIF\b0\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 전년도우심피해경험\cell 4.371\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 전년도피해규모로그\cell 4.115\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 인구수로그\cell 2.358\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 최근3년우심피해횟수\cell 2.037\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 세출예산로그\cell 2.006\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 전년도특별재난지역선포\cell 1.777\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 재정자립도\cell 1.703\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 전년도인접지역우심피해경험\cell 1.423\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 하천면적로그\cell 1.261\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 단체장재난경험\cell 1.245\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 전년도인접지역누적설치수\cell 1.240\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 전년도누적설치수로그\cell 1.144\cell\row
+\trowd\trgaph60\trleft0\cellx6500\cellx9000
+\intbl 단체장정치성향\cell 1.069\cell\row
+\pard\sa160\par
+\pard\b 표 7. 공간가중치행렬 특성\b0\par
+\trowd\trgaph40\trleft0\cellx1800\cellx2800\cellx4100\cellx5400\cellx6300\cellx7200\cellx8100\cellx9000
+\intbl\b 가중치\cell 객체\cell 연결 수\cell 평균 인접\cell 최소\cell 최대\cell 원래 고립\cell 보완 후\b0\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2800\cellx4100\cellx5400\cellx6300\cellx7200\cellx8100\cellx9000
+\intbl Queen\cell 229\cell 888\cell 3.878\cell 1\cell 9\cell 15\cell 0\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2800\cellx4100\cellx5400\cellx6300\cellx7200\cellx8100\cellx9000
+\intbl Rook\cell 229\cell 884\cell 3.860\cell 1\cell 9\cell 15\cell 0\cell\row
+\trowd\trgaph40\trleft0\cellx1800\cellx2800\cellx4100\cellx5400\cellx6300\cellx7200\cellx8100\cellx9000
+\intbl 4-NN\cell 229\cell 916\cell 4.000\cell 4\cell 4\cell 0\cell 0\cell\row
+\pard\sa160\par
+\pard\b 표 8. 2023년 전역 Moran’s I\b0\par
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl\b 종속변수\cell 가중치\cell Moran I\cell 기대값\cell z\cell p\cell N\b0\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 당해연도설치수\cell Queen\cell 0.038\cell -0.005\cell 0.756\cell 0.180\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 당해연도설치수\cell Rook\cell 0.038\cell -0.005\cell 0.755\cell 0.185\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 당해연도설치수\cell 4-NN\cell 0.054\cell -0.005\cell 1.228\cell 0.122\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 최근3년설치수\cell Queen\cell 0.051\cell -0.005\cell 0.978\cell 0.145\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 최근3년설치수\cell Rook\cell 0.051\cell -0.005\cell 0.977\cell 0.152\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 최근3년설치수\cell 4-NN\cell 0.041\cell -0.005\cell 0.961\cell 0.157\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치수\cell Queen\cell 0.029\cell -0.005\cell 0.596\cell 0.275\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치수\cell Rook\cell 0.028\cell -0.005\cell 0.583\cell 0.282\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치수\cell 4-NN\cell 0.023\cell -0.005\cell 0.574\cell 0.262\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치수로그\cell Queen\cell 0.060\cell -0.005\cell 1.129\cell 0.115\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치수로그\cell Rook\cell 0.057\cell -0.005\cell 1.082\cell 0.144\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치수로그\cell 4-NN\cell 0.067\cell -0.005\cell 1.504\cell 0.064\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치여부\cell Queen\cell 0.008\cell -0.005\cell 0.219\cell 0.418\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치여부\cell Rook\cell 0.002\cell -0.005\cell 0.125\cell 0.451\cell 205\cell\row
+\trowd\trgaph35\trleft0\cellx2200\cellx3400\cellx4600\cellx5700\cellx6800\cellx7900\cellx9000
+\intbl 누적설치여부\cell 4-NN\cell 0.038\cell -0.005\cell 0.881\cell 0.195\cell 205\cell\row
+\pard\sa160\par
+\pard\b 표 9. 유의한 LISA 군집 및 공간이상치\b0\par
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl\b 변수\cell 유형\cell 지방정부\b0\cell\row
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl 누적설치수\cell 고-고\cell 여수시, 고흥군, 진주시, 산청군\cell\row
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl 누적설치수\cell 고-저\cell 동대문구, 부산강서구, 대전동구, 동두천시, 양평군, 천안시, 곡성군, 철원군\cell\row
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl 누적설치수\cell 저-고\cell 창원시\cell\row
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl 누적설치수로그\cell 고-고\cell 여수시, 고흥군, 진주시, 산청군\cell\row
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl 누적설치수로그\cell 고-저\cell 동대문구, 부산강서구, 대전동구, 동두천시, 양평군, 철원군\cell\row
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl 누적설치수로그\cell 저-고\cell 영암군, 창원시\cell\row
+\trowd\trgaph50\trleft0\cellx2200\cellx3600\cellx9000
+\intbl 최근3년설치수\cell 고-고\cell 울주군, 고흥군, 영덕군, 울진군, 밀양시, 양산시, 삼척시\cell\row
+\pard\sa160\par
+\pard\b 표 10. 2023년 공간모형 비교\b0\par
+\trowd\trgaph50\trleft0\cellx2600\cellx4300\cellx5600\cellx7000\cellx9000
+\intbl\b 모형\cell 공간계수\cell p값\cell AIC\cell 잔차 공간상관\b0\cell\row
+\trowd\trgaph50\trleft0\cellx2600\cellx4300\cellx5600\cellx7000\cellx9000
+\intbl 일반최소제곱\cell -\cell -\cell 498.37\cell Moran I=0.036, p=0.261\cell\row
+\trowd\trgaph50\trleft0\cellx2600\cellx4300\cellx5600\cellx7000\cellx9000
+\intbl 공간시차\cell ρ=0.069\cell 0.387\cell 499.72\cell 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx2600\cellx4300\cellx5600\cellx7000\cellx9000
+\intbl 공간오차\cell λ=0.060\cell 0.475\cell 497.93\cell 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx2600\cellx4300\cellx5600\cellx7000\cellx9000
+\intbl 공간더빈\cell ρ=0.041\cell 0.627\cell 509.30\cell 비유의\cell\row
+\pard\sa160\par
+\pard\b 표 11. OLS 공간모형 진단\b0\par
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl\b 진단\cell 통계량\cell p값\cell 판정\b0\cell\row
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl 잔차 Moran’s I\cell 0.036\cell 0.261\cell 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl LM-lag\cell -\cell 0.445\cell 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl Robust LM-lag\cell -\cell 0.566\cell 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl LM-error\cell -\cell 0.532\cell 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl Robust LM-error\cell -\cell 0.711\cell 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl Breusch-Pagan\cell -\cell 0.288\cell 이분산성 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx3300\cellx5200\cellx6800\cellx9000
+\intbl Jarque-Bera\cell -\cell 0.005\cell 정규성 기각\cell\row
+\pard\sa160\par
+\pard\b 표 12. 당해연도 신규 설치 패널 포아송 결과\b0\par
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl\b 변수\cell 계수\cell 표준오차\cell p값\cell IRR\cell 95% CI\b0\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 전년도누적설치수로그\cell 0.009\cell 0.208\cell 0.964\cell 1.009\cell 0.671~1.517\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 전년도우심피해경험\cell 0.128\cell 0.155\cell 0.410\cell 1.136\cell 0.838~1.541\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 최근3년우심피해횟수\cell -0.004\cell 0.042\cell 0.928\cell 0.996\cell 0.917~1.082\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 전년도피해규모로그\cell -0.035\cell 0.031\cell 0.261\cell 0.965\cell 0.908~1.027\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 전년도특별재난지역선포\cell 0.333\cell 0.417\cell 0.425\cell 1.396\cell 0.616~3.164\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 단체장재난경험\cell 0.289*\cell 0.160\cell 0.071\cell 1.335\cell 0.976~1.826\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 단체장정치성향\cell -0.267\cell 0.165\cell 0.106\cell 0.766\cell 0.554~1.058\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 전년도인접지역누적설치수\cell -0.070\cell 0.081\cell 0.390\cell 0.933\cell 0.796~1.093\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 전년도인접지역우심피해경험\cell -0.172\cell 0.228\cell 0.450\cell 0.842\cell 0.539~1.316\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 하천면적로그\cell -0.540***\cell 0.191\cell 0.005\cell 0.583\cell 0.401~0.847\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 인구수로그\cell 1.715***\cell 0.591\cell 0.004\cell 5.554\cell 1.746~17.669\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 세출예산로그\cell 0.662\cell 0.650\cell 0.308\cell 1.938\cell 0.544~6.908\cell\row
+\trowd\trgaph35\trleft0\cellx2700\cellx3900\cellx5200\cellx6300\cellx7500\cellx9000
+\intbl 재정자립도\cell -0.014\cell 0.018\cell 0.431\cell 0.986\cell 0.952~1.021\cell\row
+\pard\sa120\fs18 주: 지방정부·연도 고정효과, 지방정부 군집강건 표준오차. N=1,989. * p<0.10, ** p<0.05, *** p<0.01.\fs21\par
+\pard\b 표 13. 동형적압력 제외 대안모형\b0\par
+\trowd\trgaph40\trleft0\cellx3100\cellx4300\cellx5600\cellx6800\cellx7900\cellx9000
+\intbl\b 변수\cell 계수\cell 표준오차\cell p값\cell IRR\cell 95% CI\b0\cell\row
+\trowd\trgaph40\trleft0\cellx3100\cellx4300\cellx5600\cellx6800\cellx7900\cellx9000
+\intbl 전년도누적설치수로그\cell -1.199***\cell 0.278\cell <0.001\cell 0.301\cell 0.175~0.519\cell\row
+\trowd\trgaph40\trleft0\cellx3100\cellx4300\cellx5600\cellx6800\cellx7900\cellx9000
+\intbl 최근3년우심피해횟수\cell 0.084\cell 0.055\cell 0.128\cell 1.088\cell 0.976~1.213\cell\row
+\trowd\trgaph40\trleft0\cellx3100\cellx4300\cellx5600\cellx6800\cellx7900\cellx9000
+\intbl 전년도피해규모로그\cell 0.025\cell 0.019\cell 0.201\cell 1.025\cell 0.987~1.064\cell\row
+\trowd\trgaph40\trleft0\cellx3100\cellx4300\cellx5600\cellx6800\cellx7900\cellx9000
+\intbl 전년도특별재난지역선포\cell -0.720**\cell 0.339\cell 0.034\cell 0.487\cell 0.250~0.948\cell\row
+\trowd\trgaph40\trleft0\cellx3100\cellx4300\cellx5600\cellx6800\cellx7900\cellx9000
+\intbl 전년도인접지역누적설치수\cell -0.101\cell 0.114\cell 0.378\cell 0.904\cell 0.722~1.131\cell\row
+\pard\sa160\par
+\pard\b 표 14. 강건성 분석 요약\b0\par
+\trowd\trgaph50\trleft0\cellx2500\cellx5000\cellx6900\cellx9000
+\intbl\b 조건\cell 핵심 변수\cell 결과\cell 해석\b0\cell\row
+\trowd\trgaph50\trleft0\cellx2500\cellx5000\cellx6900\cellx9000
+\intbl 최근3년설치수\cell 전년도누적설치수로그\cell 계수 1.980, p<0.001\cell 시간적 중첩으로 해석 제한\cell\row
+\trowd\trgaph50\trleft0\cellx2500\cellx5000\cellx6900\cellx9000
+\intbl 최근3년설치수\cell 전년도인접지역누적설치수\cell p=0.198\cell 인접효과 비유의\cell\row
+\trowd\trgaph50\trleft0\cellx2500\cellx5000\cellx6900\cellx9000
+\intbl Rook 가중치\cell 전년도인접지역누적설치수\cell 비유의\cell Queen과 동일\cell\row
+\trowd\trgaph50\trleft0\cellx2500\cellx5000\cellx6900\cellx9000
+\intbl 4-NN 가중치\cell 전년도인접지역누적설치수\cell 비유의\cell 가중치 선택에 강건\cell\row
+\trowd\trgaph50\trleft0\cellx2500\cellx5000\cellx6900\cellx9000
+\intbl 수도권 제외\cell 전년도인접지역누적설치수\cell 비유의\cell 지역구성 변경에도 동일\cell\row
+\trowd\trgaph50\trleft0\cellx2500\cellx5000\cellx6900\cellx9000
+\intbl 상위 1% 제외\cell 전년도인접지역누적설치수\cell 비유의\cell 극단값 제외에도 동일\cell\row
+\pard\sa160\par
+\pard\b 표 15. 연구문제 및 가설 검증 결과\b0\par
+\trowd\trgaph50\trleft0\cellx4500\cellx7000\cellx9000
+\intbl\b 검증내용\cell 결과\cell 판정\b0\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx7000\cellx9000
+\intbl 기존 설치수준은 신규 설치를 증가시키는가\cell 기본모형 비유의, 대안모형 음(-)\cell 지지되지 않음 / 포화 가능성\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx7000\cellx9000
+\intbl 재난경험은 신규 설치를 증가시키는가\cell 대부분 비유의\cell 지지되지 않음\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx7000\cellx9000
+\intbl 인접 지방정부 설치수준은 신규 설치를 증가시키는가\cell 모든 가중치에서 비유의\cell 지지되지 않음\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx7000\cellx9000
+\intbl 누적 설치수준은 공간적으로 군집되는가\cell 전역 Moran’s I 비유의\cell 지지되지 않음\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx7000\cellx9000
+\intbl 특정 지역의 국지적 군집은 존재하는가\cell 일부 고-고 군집 확인\cell 탐색적 지지\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx7000\cellx9000
+\intbl 동형적압력은 신규 설치를 증가시키는가\cell 종속변수와 수학적으로 결합\cell 판정 불가\cell\row
+
+\pard\sb240\sa120\b\fs28 Ⅴ. 결론\b0\fs21\par
+\pard\qj 첫째, 전국적 공간확산은 확인되지 않았다. 2023년 누적설치수로그의 Queen Moran’s I는 양(+)이었지만 통계적으로 유의하지 않았고, 공간시차·공간오차·공간더빈모형의 공간계수도 모두 비유의하였다.\par
+\pard\qj 둘째, 일부 국지적 군집은 확인되었다. 여수시, 고흥군, 진주시, 산청군은 누적설치수로그의 고-고 군집으로 나타났다. 그러나 대부분 지방정부가 비유의 유형이고 전역 공간상관이 유의하지 않으므로 제한적으로 해석해야 한다.\par
+\pard\qj 셋째, 전년도 피해경험, 최근 3년 피해횟수, 전년도 피해규모는 신규 설치를 안정적으로 설명하지 못하였다. 이는 재난 이후 복구사업이나 다른 방재수단이 우선되거나 펌프 설치사업이 1년보다 긴 시차를 두고 이루어질 가능성을 시사한다.\par
+\pard\qj 넷째, 동형적압력 변수를 제외한 대안모형에서는 전년도 누적설치수로그가 음(-)의 관계를 보였다. 이는 기존 보유 수준이 높은 지역에서 추가 설치 필요가 감소하는 포화 또는 대체 가능성과 부합한다. 다만 기본모형에서는 유의하지 않았으므로 인과효과로 확정할 수 없다.\par
+\pard\b 표 16. 연구의 한계와 후속연구 방향\b0\par
+\trowd\trgaph50\trleft0\cellx4500\cellx9000
+\intbl\b 한계\cell 후속연구 방향\b0\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx9000
+\intbl 누적설치수는 2004년 이후 신규 설치 합계\cell 2004년 이전 시설과 폐쇄·교체 이력 포함\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx9000
+\intbl 24개 지방정부 주요 자료 전 기간 결측\cell 추가 정보공개청구와 결측 원인 검토\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx9000
+\intbl 2023년 피해변수 전 지방정부 결측\cell 재해연보 최신 자료 보완\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx9000
+\intbl 2024년 경계를 과거 연도에 소급 적용\cell 연도별 행정구역 경계와 코드변경 반영\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx9000
+\intbl 펌프 용량·성능·노후도 미반영\cell 처리용량과 가동성능 분석\cell\row
+\trowd\trgaph50\trleft0\cellx4500\cellx9000
+\intbl 강수량·불투수면·하수도 특성 미통제\cell 물리적 위험·노출·취약성 변수 결합\cell\row
+\pard\sa160\par
+\pard\b 참고문헌\b0\par
+\pard Anselin, L. (1988). Spatial Econometrics: Methods and Models. Kluwer Academic Publishers.\par
+\pard Berry, F. S., & Berry, W. D. (1990). State lottery adoptions as policy innovations. American Political Science Review, 84(2), 395-415.\par
+\pard Birkland, T. A. (1997). After Disaster: Agenda Setting, Public Policy, and Focusing Events. Georgetown University Press.\par
+\pard DiMaggio, P. J., & Powell, W. W. (1983). The iron cage revisited. American Sociological Review, 48(2), 147-160.\par
+\pard LeSage, J., & Pace, R. K. (2009). Introduction to Spatial Econometrics. CRC Press.\par
+\pard Levitt, B., & March, J. G. (1988). Organizational learning. Annual Review of Sociology, 14, 319-340.\par
+\pard Shipan, C. R., & Volden, C. (2008). The mechanisms of policy diffusion. American Journal of Political Science, 52(4), 840-857.\par
+\pard Tobler, W. R. (1970). A computer movie simulating urban growth in the Detroit region. Economic Geography, 46, 234-240.\par
+\pard 김광구. (2003). 공간자기상관의 탐색과 공간회귀분석의 활용. 정책분석평가학회보, 13(1), 273-294.\par
+\pard 황소하·엄태호. (2012). 지방정부 지출의 공간적 상호작용. 한국행정학보, 46(1), 313-344.\par
+}
